@@ -1,7 +1,3 @@
-this is read me file
-## vanshika
-
-
 #### Naming conventions
 ##### variables, classNames, functions, commits, branch names, file names, folder names
 
