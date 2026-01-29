@@ -133,6 +133,35 @@
         // console.log(arr.slice(3, 7));
         // console.log(arr.splice(4, 1, 50));
         // console.log(arr.toSpliced(4, 1, 50));
+        // console.log(arr.indexOf(3))
+        // console.log(arr.indexOf(45))
+        // console.log(arr.lastIndexOf(50))
+        // console.log(arr.includes(30))
         console.log(arr)
         
     // Function
+        // normal function
+        function myFunction(name = 'nidhi', age, hobby) {
+            console.log('naam to suna hi hoga', name, age, hobby);
+            return [name, age, hobby]
+        }
+
+        console.log(myFunction('vedika', 40, ['flying']))
+        console.log(myFunction('vanshika', null, ['running']))
+        const valueOfFun = myFunction()
+        console.log(valueOfFun);
+        
+
+        // arrow function
+        const mySecondFun = (name, age, hobby) => {
+            console.log('naam to suna hi hoga', name, age, hobby);
+            return [name, age, hobby]
+   
+        }
+        mySecondFun()
+
+        // self-onvoked function
+        (function(){
+                console.log('this is self invoked fun');
+                
+        })()
