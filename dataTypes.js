@@ -113,7 +113,7 @@
         // [true, false]
         // [{}, {}, {}]
         // [3, [4, 6], 55 ]
-        const arr = [3, 5, 7, 8, 45,3 , 2, 3,5 ]
+        const arr = [3, 5, 7, 8, 45,3 , 2, 3,50 ]
         // console.log(arr.length);
         // console.log(arr.toString());
         // console.log(arr.at(4));
@@ -137,19 +137,59 @@
         // console.log(arr.indexOf(45))
         // console.log(arr.lastIndexOf(50))
         // console.log(arr.includes(30))
+
+        // console.log(arr.find((el, i, array) => el > 10));
+        // console.log(arr.findIndex((el, i, array) => el > 10));
+        // console.log(arr.findLast((el, i, array) => el > 10));
+        // console.log(arr.findLastIndex((el, i, array) => el > 10));
+
+        const str2 = ['test', 'data', 'name', 'john']
+        const obj2 = [
+            { name: 'vanshika' },
+            { name: 'vedika' },
+            { name: 'nidhi' },
+            { name: 'nensi' },
+        ]
+
+        // console.log(str2.sort())
+        // console.log(arr.sort((a, b) => a - b))
+        // console.log(arr.sort((a, b) => b - a))
+        // console.log(obj2.sort((a, b) => b.name > a.name ? -1 : 1))
+        // console.log(arr.toSorted((a, b) => b - a))
+        // console.log(arr.reverse())
+        // console.log(arr.toReversed())
+
+        // iteration methods
+        // let aaa = []
+        // arr.forEach((el, i, arr) => {
+        //     console.log(el, i, arr);
+        //      aaa.push(el * 2)
+            
+        // })
+        // console.log(aaa);
+
+        // console.log(arr.map((el, i ,arr) => {
+        //    console.log(el);
+           
+        //     return el * 2
+        // }))
+
+        console.log(arr.filter((el, i, arr) => el > 15));
+        
+        
         console.log(arr)
         
     // Function
         // normal function
-        function myFunction(name = 'nidhi', age, hobby) {
-            console.log('naam to suna hi hoga', name, age, hobby);
-            return [name, age, hobby]
-        }
+        // function myFunction(name = 'nidhi', age, hobby) {
+        //     console.log('naam to suna hi hoga', name, age, hobby);
+        //     return [name, age, hobby]
+        // }
 
-        console.log(myFunction('vedika', 40, ['flying']))
-        console.log(myFunction('vanshika', null, ['running']))
-        const valueOfFun = myFunction()
-        console.log(valueOfFun);
+        // console.log(myFunction('vedika', 40, ['flying']))
+        // console.log(myFunction('vanshika', null, ['running']))
+        // const valueOfFun = myFunction()
+        // console.log(valueOfFun);
         
 
         // arrow function
@@ -158,10 +198,10 @@
             return [name, age, hobby]
    
         }
-        mySecondFun()
+        // mySecondFun()
 
         // self-onvoked function
-        (function(){
-                console.log('this is self invoked fun');
+        // (function(){
+        //         console.log('this is self invoked fun');
                 
-        })()
+        // })()
