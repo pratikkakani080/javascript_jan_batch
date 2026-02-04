@@ -174,10 +174,33 @@
         //     return el * 2
         // }))
 
-        console.log(arr.filter((el, i, arr) => el > 15));
+        // console.log(arr.filter((el, i, arr) => el > 15));
+        // console.log(arr.every((el, i, arrr) => el > 1))
+        // console.log(arr.some((el, i, arrr) => el >= 50))
+
+        // reduce method
+        // used to reduce data ==> convert array into singular type (string, object, number)
+
+        // reduce of array of numbers
+        // const ans = arr.reduce((accumulator, currentValue, i, arrr) => {
+        //     console.log(accumulator, currentValue);
+        //     return accumulator * currentValue
+        // })
         
-        
-        console.log(arr)
+        // reduce of array of string
+        // const ans = str2.reduce((acc, curr) => {
+        //     console.log(acc, curr);
+        //     return acc + ' ' + curr
+        // }, '')
+       
+        // reduce of array of object
+        // const ans = obj2.reduce((a, c) => {
+        //     console.log(a, c);
+        //     const ar = a.name || []
+        //     ar.push(c.name)
+        //     return { name : ar }
+        // }, {})
+        // console.log(ans, obj2, { name: obj2.map(e => e.name) })
         
     // Function
         // normal function
