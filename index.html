@@ -1,12 +1,85 @@
 <!doctype html>
 <html>
   <body>
-    <h1>My First Heading</h1>
-    <p>My first paragraph.</p>
+    <h1 id="h1Element" onclick="handleClick()">My First Heading</h1>
+    <p class="p1">My first paragraph.</p>
+    <p class="p1">My first paragraph.</p>
+    <p class="p1">My first paragraph.</p>
+    <p class="p1">My first paragraph.</p>
+    <input
+      type="text"
+      placeholder="please enter"
+      onchange="handleChange(event)"
+      onkeypress="handleKeyPress(event)"
+      onkeyup="handleKeyPress(event)"
+    />
+    <input
+      type="text"
+      placeholder="please enter"
+      onchange="handleChange(event)"
+    />
+    <label>
+      <input
+        type="checkbox"
+        name="option_name"
+        value="option_value"
+        onchange="handleChange(event)"
+      />
+      Label Text
+    </label>
+    <input
+      type="radio"
+      id="email"
+      name="contact"
+      value="email"
+      onchange="handleChange(event)"
+    />
+    <label for="email">Email</label><br />
+
+    <input
+      type="radio"
+      id="phone"
+      name="contact"
+      value="phone"
+      checked
+      onchange="handleChange(event)"
+    />
+    <label for="phone">Phone</label><br />
+
+    <input
+      type="radio"
+      id="mail"
+      name="contact"
+      value="mail"
+      onchange="handleChange(event)"
+    />
+    <label for="mail">Mail</label>
+
+    <label for="file-upload">Select a file to upload:</label>
+    <input
+      type="file"
+      id="file-upload"
+      name="filename"
+      multiple
+      onchange="handleChange(event)"
+    />
   </body>
   <!-- <script>
-    console.log("this is inline scripting");
+    function handleClick() {
+      console.log("h1 tag clicked by user");
+    }
+    function handleChange(e) {
+      console.log(
+        "event =======>",
+        e.target.value,
+        e.target.checked,
+        e.target.files,
+      );
+    }
+    function handleKeyPress(e) {
+      console.log("key =====>", e);
+    }
   </script> -->
   <!-- <script src="./variables.js"></script> -->
-  <script src="./loops.js"></script>
+  <script src="./domManipulation.js"></script>
 </html>
